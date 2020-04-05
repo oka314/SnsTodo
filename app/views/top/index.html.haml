@@ -5,6 +5,67 @@
     .top-main__box--log-in
       =link_to "ログイン",user_session_path, class:"login-btn"
       =link_to "新規会員登録",new_user_session_path,class:"sign-btn"
+.accbox
+  %label{:for => "label1"} MeToとは
+  %input#label1.explain{:type => "checkbox"}/
+  .explain-box
+    %p
+      MeToとは、「自分を変えたい」という人を
+      %br
+      応援する為のSNS型のToDoアプリです。
+  %label{:for => "label2"} こんな方にオススメ！
+  %input#label2.explain{:type => "checkbox"}/
+  .explain-box
+    %p
+      自分を変えるぞ！と思い切って１日の予定を立てても
+      %br
+      どうしても自分に甘くなってしまう・・・
+      %br
+      でも大丈夫！そんな時はMeToを使って！
+      %br
+      思い切って公開してしちゃいましょう！
+      %br
+      あなたのToDoにイイネ！がついたら
+      %br
+      あなたにフォロワーがついたら
+      %br
+      きっと貴方は自信を持って行動できるでしょう！
+      %br
+      もし、尊敬できる人を見つけたら
+      %br
+      勇気を持ってフォローしてコメントしよう！
+      %br
+      もしかしたら仲良くなれちゃうかも！
+      %br
+      頑張る貴方は美しい！理想の自分を目指そう！
+ 
+  %label{:for => "label3"} 製作者挨拶
+  %input#label3.explain{:type => "checkbox"}/
+  .explain-box
+    %p
+      みなさん！MeToを見つけてありがとうございます！
+      %br
+      感謝感激です！！！
+      %br
+      勘のいい方ならわかるかもしれません・・・
+      %br
+      私は超絶怒涛の三日坊主です！
+      %br
+      情けないくらいに長続きしません・・
+      %br
+      このままではヤバイと危機感を感じたんです・・
+      %br
+      そう！これは私のためだけに作る予定でした！
+      %br
+      ですが、せっかくなら皆さんのお役に立ちたいと思ったので作りました！
+      %br
+      もちろん私も使います！交流しましょう！では、MeToで
+  
+
+
+
+
+
 -# .nav
 -#   - if user_signed_in?
 -#     .right-list

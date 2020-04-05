@@ -1,8 +1,6 @@
 .top-main{
-  width: 100vw;
-  height: 100vh;
-  padding: 30px 20px;
-  background-color: pink;
+  padding: 100px 30px 20px;
+
   &__box{
     text-align: center;
     &--title{
@@ -12,6 +10,7 @@
     }
     &--log-in{
       text-align: center;
+      margin: 60px 0 20px 0;
       .login-btn{
         text-decoration: none;
         margin-right: 30px;
@@ -27,4 +26,48 @@
       }
     }
   }
+}
+.accbox {
+  margin: 0 auto;
+  text-align: center;
+  padding: 0;
+  max-width: 500px;
+}
+
+.accbox label {
+  display: block;
+  margin: 1px 0;
+  padding : 11px 12px;
+  color :black;
+  font-weight: bold;
+  background :#a4cbf3;
+  cursor :pointer;
+  transition: all 0.5s;
+}
+
+.accbox label:hover {
+  background :#85baef;
+}
+
+.accbox input {
+  display: none;
+}
+
+.accbox .explain-box{
+  height: 0;
+  padding: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: 0.8s;
+}
+
+.explain:checked + .explain-box{
+  height: auto;
+  padding: 5px;
+  background: #eaeaea;
+  opacity: 1;
+}
+p {
+  font-size: 15px;
+  padding: 0 10px;
 }
