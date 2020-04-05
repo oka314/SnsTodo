@@ -1,9 +1,30 @@
 .top-main{
   width: 100vw;
+  height: 100vh;
   padding: 30px 20px;
-  background-color: blue;
-  &__title{
-    color:red;
+  background-color: pink;
+  &__box{
     text-align: center;
+    &--title{
+      color:red;
+      text-align: center;
+      font-size: 40px;
+    }
+    &--log-in{
+      text-align: center;
+      .login-btn{
+        text-decoration: none;
+        margin-right: 30px;
+        font-size: 25px;
+        font-weight: bold;
+        color: black;
+      }
+      .sign-btn{
+        text-decoration: none;
+        font-size: 25px;
+        font-weight: bold;
+        color: black;
+      }
+    }
   }
 }
