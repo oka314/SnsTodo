@@ -1,11 +1,13 @@
 .header{
-  .header-main{
-    width: 100vw;
-    padding: 10px 200px 0px 100px;
-    border-bottom: 5px solid black;
+  display: flex;
+  width: 100vw;
+  position: relative;
+  border-bottom: 5px solid black;
+  .header-left{
+    width: 60%;
+    padding: 10px 0px 0px 200px;
     align-items: center;
     display: flex;
-    position: relative;
     &__logo{
      padding-right: 30px; 
     }
@@ -22,10 +24,11 @@
         font-weight: bold;
       }
     }
-    &__mypage{
+  }
+  .header-right{
+    &__my-page{
       position: absolute;
       bottom: 0;
-      right: 200px;
     }
   }
 }
