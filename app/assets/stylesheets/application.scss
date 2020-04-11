@@ -1,1 +1,10 @@
+@import "reset";
+*{
+  box-sizing: border-box;
+}
+.wrapper{
+  width: 100vw;
+}
+
 @import "top";
+@import "posts/posts";

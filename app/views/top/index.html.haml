@@ -5,7 +5,7 @@
     -if user_signed_in?
       .top-main__box--log-in
         = link_to "ログアウト", destroy_user_session_path, method: :delete,class:"log-out"
-        = link_to "今日のMeToを始める","#",class:"start-btn"
+        = link_to "今日のMeToを始める",posts_path,class:"start-btn"
     -else
       .top-main__box--log-in
         =link_to "ログイン",new_user_session_path, class:"login-btn"
