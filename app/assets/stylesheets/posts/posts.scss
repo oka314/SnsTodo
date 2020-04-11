@@ -1,7 +1,31 @@
-.main{
-  width: 100vw;
-  padding: 10px 100px;
-  &__header{
-
+.header{
+  .header-main{
+    width: 100vw;
+    padding: 10px 200px 0px 100px;
+    border-bottom: 5px solid black;
+    align-items: center;
+    display: flex;
+    position: relative;
+    &__logo{
+     padding-right: 30px; 
+    }
+    &__search{
+      width: 100%;
+      &--box{
+        margin-left: 50px;
+        vertical-align : middle;
+        width: 50%;
+      }
+      &--btn{
+        height: 27px;
+        width: 100px;
+        font-weight: bold;
+      }
+    }
+    &__mypage{
+      position: absolute;
+      bottom: 0;
+      right: 200px;
+    }
   }
 }

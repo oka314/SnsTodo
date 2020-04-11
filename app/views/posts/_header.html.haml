@@ -1,5 +1,11 @@
-.main
-  .main__header
-    = image_tag src="/images/logo.png", width:"140px", class:"shop-icon"
-    = link_to "ログアウト", destroy_user_session_path, method: :delete,class:"log-out"
+.header
+  .header-main
+    .header-main__logo
+      = image_tag src="/images/logo.png", width:"140px", class:"shop-icon"
+    .header-main__search
+      %input.header-main__search--box
+      %button.header-main__search--btn
+        検索
+    .header-main__mypage
+      マイページ
 -# ログインしたら　トップ画面に戻るorログインするリンクだけを表示させるようにする
