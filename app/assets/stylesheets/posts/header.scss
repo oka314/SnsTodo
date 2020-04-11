@@ -31,13 +31,15 @@
     display: flex;
     padding:50px 0 0 150px;
     
-    &__my-page,&__log-out{
-      width: 20%;
+    &__my-page,&__log-out,&__ranking{
       text-align: center;
       line-height: 50px;
     }
     &__log-out{
       margin-left: 30px;
+    }
+    &__ranking{
+      margin-left: 20px;
     }
   }
 }
