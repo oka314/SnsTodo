@@ -1,0 +1,5 @@
+.main
+  .main__header
+    = image_tag src="/images/logo.png", width:"140px", class:"shop-icon"
+    = link_to "ログアウト", destroy_user_session_path, method: :delete,class:"log-out"
+-# ログインしたら　トップ画面に戻るorログインするリンクだけを表示させるようにする
