@@ -1,0 +1,12 @@
+.main{
+  background-color: red;
+  width: 100vw;
+  // height: 100px;
+  &__box{
+    background-color: blue;
+    width: 70%;
+    height: 800px;
+    margin: 0 auto;
+    padding: 50px 30px;
+  }
+}
