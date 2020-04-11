@@ -4,7 +4,7 @@
   position: relative;
   border-bottom: 5px solid black;
   .header-left{
-    width: 60%;
+    width: 90%;
     padding: 10px 0px 0px 200px;
     align-items: center;
     display: flex;
@@ -13,22 +13,31 @@
     }
     &__search{
       width: 100%;
+      padding-left: 90px;
       &--box{
         margin-left: 50px;
         vertical-align : middle;
-        width: 50%;
+        width: 80%;
       }
       &--btn{
         height: 27px;
-        width: 100px;
+        width: 60px;
         font-weight: bold;
       }
     }
   }
   .header-right{
-    &__my-page{
-      position: absolute;
-      bottom: 0;
+    width: 40%;
+    display: flex;
+    padding:50px 0 0 150px;
+    
+    &__my-page,&__log-out{
+      width: 20%;
+      text-align: center;
+      line-height: 50px;
+    }
+    &__log-out{
+      margin-left: 30px;
     }
   }
 }
