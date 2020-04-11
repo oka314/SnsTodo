@@ -11,14 +11,14 @@
     &--log-in{
       text-align: center;
       margin: 60px 0 20px 0;
-      .login-btn{
+      .login-btn,.log-out{
         text-decoration: none;
         margin-right: 30px;
         font-size: 25px;
         font-weight: bold;
         color: black;
       }
-      .sign-btn{
+      .sign-btn,.start-btn{
         text-decoration: none;
         font-size: 25px;
         font-weight: bold;

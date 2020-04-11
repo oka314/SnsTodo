@@ -13,7 +13,8 @@ belongs_to :user
 |Column         |Type   |Options|
 |---------------|-------||-------|
 |name           |string ||null:false
-|profile-image  |text   ||
+|image          |text   |
+|profile        |text   |
 |nickname       |string ||null: false|
 |email          |string ||null: false, uniqe: true|
 ### Association
