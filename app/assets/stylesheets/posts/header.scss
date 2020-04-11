@@ -1,0 +1,45 @@
+.header{
+  display: flex;
+  width: 100vw;
+  border-bottom: 2px solid gray;
+  
+  .header-left{
+    width: 90%;
+    padding: 10px 0px 0px 200px;
+    align-items: center;
+    display: flex;
+    &__logo{
+     padding-right: 30px; 
+    }
+    &__search{
+      width: 100%;
+      padding-left: 90px;
+      &--box{
+        margin-left: 50px;
+        vertical-align : middle;
+        width: 80%;
+      }
+      &--btn{
+        height: 27px;
+        width: 60px;
+        font-weight: bold;
+      }
+    }
+  }
+  .header-right{
+    width: 40%;
+    display: flex;
+    padding:50px 0 0 150px;
+    
+    &__my-page,&__log-out,&__ranking{
+      text-align: center;
+      line-height: 50px;
+    }
+    &__log-out{
+      margin-left: 30px;
+    }
+    &__ranking{
+      margin-left: 20px;
+    }
+  }
+}

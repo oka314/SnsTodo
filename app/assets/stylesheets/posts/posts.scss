@@ -1,44 +1,37 @@
-.header{
-  display: flex;
+.main{
+  background-color: gray;
   width: 100vw;
-  border-bottom: 2px solid gray;
-  position: fixed;
-  
-  .header-left{
-    width: 90%;
-    padding: 10px 0px 0px 200px;
-    align-items: center;
-    display: flex;
-    &__logo{
-     padding-right: 30px; 
-    }
-    &__search{
-      width: 100%;
-      padding-left: 90px;
-      &--box{
-        margin-left: 50px;
-        vertical-align : middle;
-        width: 80%;
-      }
-      &--btn{
-        height: 27px;
-        width: 60px;
-        font-weight: bold;
-      }
-    }
-  }
-  .header-right{
-    width: 40%;
-    display: flex;
-    padding:50px 0 0 150px;
-    
-    &__my-page,&__log-out{
-      width: 20%;
+  &__box{
+    background-color: blue;
+    width: 70%;
+    height: 900px;
+    margin: 0 auto;
+    padding: 50px 30px;
+    .title{
       text-align: center;
-      line-height: 50px;
+      font-size: 50px;
+      font-weight: bold;
     }
-    &__log-out{
-      margin-left: 30px;
+    .content-box{
+      width: 80%;
+      background-color: black;
+      margin: 0 auto;
+      padding: 30px;
+      height: 700px;
+      overflow: auto;
+      &__posts{
+        width: 80%;
+        height: 50px;
+        background-color: white;
+        margin: 0 auto;
+        margin-bottom:10px ;
+        .posts-data{
+          display: flex;
+          .user-name,.date{
+            margin-left:10px ;
+          }
+        }
+      }
     }
   }
 }
