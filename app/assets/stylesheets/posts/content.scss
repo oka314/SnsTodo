@@ -1,0 +1,21 @@
+.content-box{
+  width: 80%;
+  background-color: black;
+  margin: 0 auto;
+  padding: 30px;
+  height: 700px;
+  overflow: auto;
+  &__posts{
+    width: 80%;
+    height: 50px;
+    background-color: white;
+    margin: 0 auto;
+    margin-bottom:10px ;
+    .posts-data{
+      display: flex;
+      .user-name,.date{
+        margin-left:10px ;
+      }
+    }
+  }
+}
