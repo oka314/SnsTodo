@@ -1,14 +1,15 @@
 .header
   .header-left
     .header-left__logo
-      = image_tag src="/images/logo.png", width:"140px", class:"shop-icon"
+      = link_to root_path do
+        = image_tag src="/images/logo.png", width:"140px", class:"shop-icon"
     .header-left__search
       %input.header-left__search--box
       %button.header-left__search--btn
         検索
   .header-right
     .header-right__my-page
-      マイページ
+      -# = link_to "マイページ", user_path
     .header-right__log-out
       ログアウト
     .header-right__ranking

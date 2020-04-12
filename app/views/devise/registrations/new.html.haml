@@ -6,6 +6,11 @@
     %br/
     = f.email_field :email, autofocus: true, autocomplete: "email"
   .field
+    = f.label :ニックネーム
+    %br/
+    = f.text_field :name, autofocus: true, autocomplete: "name"
+
+  .field
     = f.label :パスワード
     - if @minimum_password_length
       %em
