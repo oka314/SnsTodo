@@ -34,6 +34,10 @@
     &__my-page,&__log-out,&__ranking{
       text-align: center;
       line-height: 50px;
+      .usermypage{
+        text-decoration: none;
+        color: black;
+      }
     }
     &__log-out{
       margin-left: 30px;
