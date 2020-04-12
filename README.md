@@ -3,7 +3,6 @@
 # postテーブル（投稿）
 |Column         |Type   |Options|
 |---------------|-------||-------|
-|title          |string ||null:false|
 |explain        |string ||null:false|
 |user_id        |integer||null:false, forein_key|
 ### Association
