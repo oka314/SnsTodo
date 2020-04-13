@@ -4,12 +4,16 @@ class PostsController < ApplicationController
   end
 
   def new
-    @posts = Posts.new
+    @posts = Post.new
   end
 
   def creat
-    @posts = Posts.new
+    @posts = Post.new
     if @posts.save
-      flash
+      redirect_to root_path
+    else
+      flash.now[:alert] = "投稿できませんでした"
+    end
+  end
 
 end
