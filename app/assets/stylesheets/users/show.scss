@@ -19,6 +19,9 @@
       cursor :pointer;
       transition: all 0.5s;
     }
+    &--accbox label:hover,.menubar-btn:hover {
+      background :#85baef;
+    }
     &--accbox input{
       display: none;
     }
