@@ -5,14 +5,10 @@
       %label{:for => "label4"} メニュー
       %input#label4.menu{:type => "checkbox"}/
       .menubar
-        %p
-          投稿する
-        %p
-          ランキング
-        %p
-          フォロワー
-        %p
-          フォロー
+        = link_to "投稿する","#",class:"menubar-btn"
+        = link_to "ランキング","#",class:"menubar-btn"
+        = link_to "フォロワー","#",class:"menubar-btn"
+        = link_to "フォロー","#",class:"menubar-btn"
   .main__right
     %h1.title "#{current_user.name}さんのToDoリスト"
     = render "posts/content"
