@@ -1,5 +1,6 @@
 = render "posts/header"
 .main
-  .main__box
-    %h1.title みんなの投稿
+  .main__box-left
+  .main__box-right
+    %h1.title "#{current_user.name}さんのToDoリスト"
     = render "posts/content"
