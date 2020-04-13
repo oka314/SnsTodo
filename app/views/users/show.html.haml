@@ -1,6 +1,18 @@
 = render "posts/header"
 .main
-  .main__box-left
-  .main__box-right
+  .main__left
+    .main__left--accbox
+      %label{:for => "label4"} メニュー
+      %input#label4.menu{:type => "checkbox"}/
+      .menubar
+        %p
+          投稿する
+        %p
+          ランキング
+        %p
+          フォロワー
+        %p
+          フォロー
+  .main__right
     %h1.title "#{current_user.name}さんのToDoリスト"
     = render "posts/content"
