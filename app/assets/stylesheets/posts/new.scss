@@ -2,14 +2,16 @@
   width: 80%;
   background-color: black;
   margin: 0 auto;
-  padding: 30px;
+  padding: 80px 30px;
   height: 700px;
   .posts-box{
-    height: 500px;
+    height: 250px;
     width: 100%;
     margin-bottom:70px ;
     background-color: white;
     font-size: 15px;
+    resize: none;
+    padding: 30px;
 
     input:focus{
       outline: none;
