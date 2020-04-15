@@ -4,8 +4,9 @@
   .main__right
     %h1.title
       ToDo投稿
-    .content-box
-      .posts-box
-      %button.write-box
-        投稿する
+    .posts-boxs
+      = form_with model: @post,local: true do|f|
+        = f.text_field :explain,placeholder: "今日やることを書き込んでください",class:"posts-box"
+        =f.submit "投稿する",class:"write-box"
+       
 
