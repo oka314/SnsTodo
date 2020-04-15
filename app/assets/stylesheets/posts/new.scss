@@ -1,13 +1,17 @@
-.main{
-  &__right{
-    .posts-box{
-      width: 80%;
-      background-color: black;
-      margin: 0 auto;
-      padding: 30px;
-      height: 700px;
-      overflow: auto;
-    
-    }
-  }
+.posts-box{
+  height: 70%;
+  width: 100%;
+  margin-bottom:70px ;
+  background-color: white;
+}
+.write-box{
+  height: 100px;
+  width: 30%;
+  line-height: 100px;
+  margin: 0 auto;
+  text-align: center;
+  background-color: white;
+  border-radius: 50px;
+  font-size: 40px;
+  font-weight: 900;
 }
