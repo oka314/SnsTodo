@@ -10,9 +10,7 @@
   .header-right
     .header-right__my-page
       = link_to "#{current_user.name}さんのマイページ","/users/#{current_user.id}",class:"usermypage"
-      -# = link_to "マイページ", user_path
     .header-right__log-out
-      ログアウト
+      = link_to "ログアウト", destroy_user_session_path, method: :delete,class:"usermypage"
     .header-right__ranking
       ランキング
--# ログインしたら　トップ画面に戻るorログインするリンクだけを表示させるようにする

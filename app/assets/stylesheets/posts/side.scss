@@ -1,0 +1,44 @@
+.main__left{
+  border-right: 3px solid black;
+  width: 20%;
+  margin-right: 100px;
+  &--accbox{
+    text-align: center;
+  }
+  &--accbox label{
+    display: block;
+    margin: 1px 0;
+    padding : 11px 12px;
+    color :black;
+    font-weight: bold;
+    background: #eaeaea;
+    cursor :pointer;
+    transition: all 0.5s;
+  }
+  &--accbox label:hover,.menubar-btn:hover {
+    background :#85baef;
+  }
+  &--accbox input{
+    display: none;
+  }
+  &--accbox .menubar{
+    height: 0;
+    padding: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: 0.8s;    
+  }
+  .menu:checked + .menubar{
+    height: auto;
+    padding: 5px;
+    background: #eaeaea;
+    opacity: 1;
+  }
+   .menubar-btn{
+     display: block;
+    font-size: 20px;
+    color: black;
+    padding: 20px 10px;
+    text-decoration: none;
+  }
+}

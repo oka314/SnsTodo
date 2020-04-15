@@ -1,0 +1,9 @@
+.main__left
+  .main__left--accbox
+    %label{:for => "label4"} メニュー
+    %input#label4.menu{:type => "checkbox"}/
+    .menubar
+      = link_to "投稿する",new_post_path,class:"menubar-btn"
+      = link_to "ランキング","#",class:"menubar-btn"
+      = link_to "フォロワー","#",class:"menubar-btn"
+      = link_to "ログアウト", destroy_user_session_path, method: :delete,class:"menubar-btn"

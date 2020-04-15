@@ -1,0 +1,35 @@
+.posts-boxs{
+  width: 80%;
+  background-color: black;
+  margin: 0 auto;
+  padding: 80px 30px;
+  height: 700px;
+  .posts-box{
+    height: 250px;
+    width: 100%;
+    margin-bottom:70px ;
+    background-color: white;
+    font-size: 15px;
+    resize: none;
+    padding: 30px;
+  }
+    input:focus{
+      outline: none;
+    }
+    .write-box{
+      display: block;
+      margin: 0 auto;
+      height: 100px;
+      width: 30%;
+      text-align: center;
+      background-color: white;
+      border-radius: 50px;
+      font-size: 40px;
+      font-weight: 900;
+    }
+    .write-box:active{
+      -webkit-transform: translateY(4px);
+      transform: translateY(4px);
+      border-bottom: none;
+    }
+}

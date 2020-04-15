@@ -4,16 +4,23 @@ class PostsController < ApplicationController
   end
 
   def new
-    @posts = Post.new
+    @post = Post.new
+   
   end
 
-  def creat
-    @posts = Post.new
-    if @posts.save
-      redirect_to root_path
+  def create
+    @post = Post.new(post_params)
+    if @post.save
+      redirect_to ("/users/#{current_user.id}")
     else
-      flash.now[:alert] = "投稿できませんでした"
+      render :new
     end
   end
-
+  
+  private 
+  def post_params
+    params.require(:post).permit(:explain,:id).merge(
+      user_id: current_user.id
+      )
+  end
 end
