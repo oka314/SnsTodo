@@ -9,20 +9,18 @@ class PostsController < ApplicationController
   end
 
   def create
-    @post = Post.create(post_params)  
-   
-    
+    @post = Post.new(post_params)
     if @post.save
-      render "/users/#{current_user.id}"
+      redirect_to ("/users/#{current_user.id}")
     else
-      redirect_to root_path
+      render :new
       
     end
   end
 
   private 
   def post_params
-    params.require(:post).permit(:explain).merge(
+    params.require(:post).permit(:explain,:id).merge(
       user_id: current_user.id
       )
   end
