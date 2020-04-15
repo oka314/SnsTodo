@@ -4,14 +4,23 @@
   margin-bottom:70px ;
   background-color: white;
 }
+button:focus{
+  outline: none;
+}
 .write-box{
+  display: block;
+  margin: 0 auto;
   height: 100px;
   width: 30%;
   line-height: 100px;
-  margin: 0 auto;
   text-align: center;
   background-color: white;
   border-radius: 50px;
   font-size: 40px;
   font-weight: 900;
+}
+.write-box:active{
+  -webkit-transform: translateY(4px);
+  transform: translateY(4px);
+  border-bottom: none;
 }
