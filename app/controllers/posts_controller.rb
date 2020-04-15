@@ -8,12 +8,14 @@ class PostsController < ApplicationController
   end
 
   def creat
-    @posts = Post.new
+    @posts = Post.create(post_params)
     if @posts.save
-      redirect_to root_path
+      redirect_to user_path
     else
-      flash.now[:alert] = "投稿できませんでした"
+      render :new
+      
     end
   end
-
+  private post_params
+    params.require(:post).permit(:explain)
 end
