@@ -14,10 +14,9 @@ class PostsController < ApplicationController
       redirect_to ("/users/#{current_user.id}")
     else
       render :new
-      
     end
   end
-
+  
   private 
   def post_params
     params.require(:post).permit(:explain,:id).merge(
