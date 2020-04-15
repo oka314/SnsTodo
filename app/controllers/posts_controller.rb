@@ -11,10 +11,8 @@ class PostsController < ApplicationController
   def create
     @post = Post.new(post_params)
     if @post.save
-      flash.now[:alert] = "登録しました！今日も１日頑張りましょう！"
       redirect_to ("/users/#{current_user.id}")
     else
-      flash.now[:alert] = "保存できませんでした"
       render :new
       
     end
