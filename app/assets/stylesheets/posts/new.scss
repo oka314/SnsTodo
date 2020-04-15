@@ -1,0 +1,13 @@
+.main{
+  &__right{
+    .posts-box{
+      width: 80%;
+      background-color: black;
+      margin: 0 auto;
+      padding: 30px;
+      height: 700px;
+      overflow: auto;
+    
+    }
+  }
+}
