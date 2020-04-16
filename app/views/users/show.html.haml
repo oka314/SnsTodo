@@ -4,7 +4,7 @@
   .main__right
     %h1.title "#{current_user.name}さんのToDoリスト"
     .content-box
-      - @posts.each do |post|
+      - @post.each do |post|
         .content-box__posts
           .posts-data
             .user-name
