@@ -1,8 +1,6 @@
 .main{
-  background-color: gray;
   width: 100vw;
   &__box{
-    background-color: blue;
     width: 70%;
     height: 900px;
     margin: 0 auto;
@@ -14,7 +12,6 @@
     }
     .content-box{
       width: 80%;
-      background-color: black;
       margin: 0 auto;
       padding: 30px;
       height: 700px;
