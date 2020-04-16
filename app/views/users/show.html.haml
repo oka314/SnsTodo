@@ -10,6 +10,6 @@
             .user-name
               =post.user.name
             .date
-              =post.created_at
+              =post.created_at.to_s(:datetime_jp)
           .posts-content
             =post.explain
