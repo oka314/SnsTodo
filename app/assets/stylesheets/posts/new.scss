@@ -1,6 +1,6 @@
 .posts-boxs{
   width: 80%;
-  background-color: gray;
+  border: 3px solid black;
   margin: 0 auto;
   padding: 80px 30px;
   height: 700px;
@@ -12,6 +12,7 @@
     font-size: 15px;
     resize: none;
     padding: 30px;
+    border:  2px solid black;
   }
     input:focus{
       outline: none;
@@ -23,6 +24,7 @@
       width: 30%;
       text-align: center;
       background-color: white;
+      border: 2px solid black;
       border-radius: 50px;
       font-size: 40px;
       font-weight: 900;
