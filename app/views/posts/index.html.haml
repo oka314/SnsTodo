@@ -4,7 +4,7 @@
     %h1.title みんなの投稿
     .content-box
       - @posts.each do |post|
-        = link_to user_path(post),class:"posts-link" do
+        = link_to user_path(post.user),class:"posts-link" do
           .content-box__posts
             .posts-data
               .user-name
