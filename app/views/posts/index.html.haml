@@ -4,12 +4,13 @@
     %h1.title みんなの投稿
     .content-box
       - @posts.each do |post|
-        .content-box__posts
-          .posts-data
-            .user-name
-              =post.user.name
-            .date
-              =post.created_at
-          .posts-content
-            =post.explain
+        = link_to user_path(post.user),class:"posts-link" do
+          .content-box__posts
+            .posts-data
+              .user-name
+                =post.user.name
+              .date
+                =post.created_at.to_s(:datetime_jp)
+            .posts-content
+              =post.explain
     

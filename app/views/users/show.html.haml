@@ -2,7 +2,7 @@
 .main
   = render "posts/side"
   .main__right
-    %h1.title "#{current_user.name}さんのToDoリスト"
+    %h1.title "#{@user.name}さんのToDoリスト"
     .content-box
       - @post.each do |post|
         .content-box__posts
@@ -10,6 +10,6 @@
             .user-name
               =post.user.name
             .date
-              =post.created_at
+              =post.created_at.to_s(:datetime_jp)
           .posts-content
             =post.explain
