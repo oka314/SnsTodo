@@ -8,12 +8,16 @@ class PostsController < ApplicationController
    
   end
 
+  def show
+  
+  end
+
   def create
     @post = Post.new(post_params)
     if @post.save
-      redirect_to ("/users/#{current_user.id}")
+      redirect_to ("/users/#{current_user.id}"),notice:'登録しました！今日も一緒に頑張りましょう！'
     else
-      render :new
+      render :new,notice:'登録失敗しました'
     end
   end
   
