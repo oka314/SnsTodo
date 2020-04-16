@@ -3,4 +3,13 @@
   = render "posts/side"
   .main__right
     %h1.title "#{current_user.name}さんのToDoリスト"
-    = render "posts/content"
+    .content-box
+      - @post.each do |post|
+        .content-box__posts
+          .posts-data
+            .user-name
+              =post.name
+            .date
+              =post.created_at
+          .posts-content
+            =post.explain

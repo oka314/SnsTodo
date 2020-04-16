@@ -1,10 +1,10 @@
--# .content-box
--#   - @posts.each do |post|
--#     .content-box__posts
--#       .posts-data
--#         .user-name
--#           =post.user.name
--#         .date
--#           =post.created_at
--#       .posts-content
--#         =post.explain
+.content-box
+  - @post.each do |post|
+    .content-box__posts
+      .posts-data
+        .user-name
+          =post.user.name
+        .date
+          =post.created_at
+      .posts-content
+        =post.explain
