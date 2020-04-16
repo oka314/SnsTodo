@@ -5,9 +5,9 @@
   padding: 30px;
   height: 700px;
   overflow: auto;
+  margin-bottom: 10px;
   &__posts{
     width: 80%;
-    height: 50px;
     background-color: white;
     margin: 0 auto;
     margin-bottom:10px ;
@@ -16,6 +16,11 @@
       .user-name,.date{
         margin-left:10px ;
       }
+    }
+    .posts-content{
+      margin-bottom: 10px;
+      padding: 0 12x;
+      font-size: 15px;
     }
   }
 }
