@@ -5,9 +5,33 @@
 .wrapper{
   width: 100vw;
 }
+.content-box{
+  width: 80%;
+  margin: 0 auto;
+  padding: 30px;
+  height: 700px;
+  overflow: auto;
+  &__posts{
+    width: 80%;
+    background-color: white;
+    margin: 0 auto;
+    margin-bottom:15px ;
+    border: 2px solid black;
+    .posts-data{
+      display: flex;
+      .user-name,.date{
+        margin-left:10px ;
+      }
+    }
+    .posts-content{
+      padding: 0 12px;
+      font-size: 15px;
+    }
+  }
+}
+
 @import "top";
 @import "posts/header";
-@import "posts/content";
 @import "posts/index";
 @import "users/show";
 @import "posts/new";
