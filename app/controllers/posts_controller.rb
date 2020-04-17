@@ -23,10 +23,12 @@ class PostsController < ApplicationController
   end
 
   def destroy
-    @post = Post.find(params[:id])
-    @post.destroy
-    redirect_to ("/users/#{current_user.id}"),notice:"削除しました。"
-
+    post = Post.find(params[:id])
+    if post.destroy
+      redirect_to ("/users/#{current_user.id}"),notice:"削除しました。"
+    else 
+      redirect_to ("/users/#{current_user.id}"),notice:"削除できませんでした。"
+    end
   end
   
   private 
