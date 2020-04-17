@@ -21,6 +21,13 @@ class PostsController < ApplicationController
       render :new,notice:'登録失敗しました'
     end
   end
+
+  def destroy
+    @post = Post.find(params[:id])
+    @post.destroy
+    redirect_to ("/users/#{current_user.id}"),notice:"削除しました。"
+
+  end
   
   private 
   def post_params

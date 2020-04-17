@@ -11,5 +11,7 @@
               =post.user.name
             .date
               =post.created_at.to_s(:datetime_jp)
+            - if user_signed_in? && current_user.id == @post.user_id
+              .
           .posts-content
             =post.explain
