@@ -11,6 +11,7 @@
               =post.user.name
             .date
               =post.created_at.to_s(:datetime_jp)
-            =link_to "削除",post_path(post),method: :delete,class:"post-delete"
+            -if user_signed_in? && current_user.id == post.user_id
+              =link_to "削除",post_path(post),method: :delete,class:"post-delete"
           .posts-content
             =post.explain
