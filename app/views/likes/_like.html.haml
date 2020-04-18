@@ -1,0 +1,4 @@
+- if Like.find_by(user_id: current_user.id,post_id: @post)
+  = link_to "いいね！済み",post_like_path(post.id), method: :post 
+- else
+  = link_to 'いいね' post_likes_path(post.id),method: :post,
