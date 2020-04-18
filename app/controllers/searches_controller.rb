@@ -1,4 +1,6 @@
 class SearchesController < ApplicationController
-  @posts = Post.searh(params[:keyword])
-  @serch =params[:keyword]
+  def index
+    @posts = Post.search(params[:keyword])
+    @serch =params[:keyword]
+  end
 end

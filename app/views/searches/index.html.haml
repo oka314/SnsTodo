@@ -1,0 +1,8 @@
+= render "posts/header"
+.main
+  = render "posts/side"
+  .main__right
+    - if @search.present?
+      .content-box
+        =@search
+    
