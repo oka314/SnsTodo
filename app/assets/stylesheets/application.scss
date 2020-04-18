@@ -19,12 +19,13 @@
     border: 2px solid black;
     .posts-data{
       display: flex;
+      margin-bottom: 5px;
       .user-name,.date{
         margin-left:10px ;
       }
     }
     .posts-content{
-      padding: 0 12px;
+      padding: 0 20px;
       font-size: 15px;
     }
   }
