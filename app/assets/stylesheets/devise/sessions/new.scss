@@ -1,0 +1,42 @@
+.user-main{
+  width: 100vw;
+  padding-top: 150px;
+  &__box{
+    width: 30%;
+    margin: 0 auto;
+    text-align: center;
+    background: rgba(39, 37, 37, 0.329);
+    border-radius: 10px;
+    box-shadow: 4px 4px;
+    &--title{
+      font-size: 40px;
+    }
+    .field {
+      font-size: 20px;
+  
+    }
+    .email,.password,.brain,.actions{
+      margin-bottom: 20px;
+    }
+    .field-btn{
+      width: 120px;
+      border-radius: 50px;
+      font-size: 20px;
+      font-weight: 900;
+      outline: none;
+      box-shadow: 2px 2px;
+    }
+  }
+  .back-btn{
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    border-bottom:1px solid gray ;
+    margin-bottom:5px ;
+  }
+}
+.field-btn:active{
+  border:none;
+  -webkit-transform: translate(6px,6px);
+  transform: translate(6px,6px);
+}

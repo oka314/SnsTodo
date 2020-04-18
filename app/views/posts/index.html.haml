@@ -11,6 +11,11 @@
                 =post.user.name
               .date
                 =post.created_at.to_s(:datetime_jp)
+                = render "likes/like"
+                -# - if Like.find_by(user_id: current_user.id,post_id: @post)
+                -#   = link_to "いいね！済み",post_like_path(post.id), method: :delete 
+                -# - else
+                -#   = link_to "いいね", post_path(post.id),method: :post
             .posts-content
               =post.explain
     
