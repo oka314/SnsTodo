@@ -1,0 +1,27 @@
+.user-main{
+  width: 100vw;
+  padding-top: 150px;
+  &__box{
+    width: 30%;
+    margin: 0 auto;
+    text-align: center;
+    background: rgba(39, 37, 37, 0.329);
+    border-radius: 10px;
+    box-shadow: 4px 4px;
+    &--title{
+      font-size: 60px;
+    }
+    .field {
+      font-size: 20px;
+      color: red;
+    }
+    .email,.password,.brain,.actions{
+      margin-bottom: 20px;
+    }
+  }
+}
+.user-main:active{
+  border:none;
+  -webkit-transform: translate(6px,6px);
+  transform: translate(6px,6px);
+}

@@ -6,5 +6,5 @@ Rails.application.routes.draw do
   resources :posts, only:[:index,:new,:create,:show,:destroy] 
   resources :users, only: [:show]
   post "likes/:post_id/create" => "likes#create"
-¥  post "likes/:post_id/destroy" => "likes#destroy"
+  post "likes/:post_id/destroy" => "likes#destroy"
 end
