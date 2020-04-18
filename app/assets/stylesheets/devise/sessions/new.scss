@@ -13,14 +13,21 @@
     }
     .field {
       font-size: 20px;
-      color: red;
+  
     }
     .email,.password,.brain,.actions{
       margin-bottom: 20px;
     }
+    .field-btn{
+      width: 100px;
+      border-radius: 50px;
+      font-size: 20px;
+      outline: none;
+      box-shadow: 1px 1px;
+    }
   }
 }
-.user-main:active{
+.field-btn:active{
   border:none;
   -webkit-transform: translate(6px,6px);
   transform: translate(6px,6px);
