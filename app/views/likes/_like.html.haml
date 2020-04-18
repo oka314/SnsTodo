@@ -1,4 +1,4 @@
-- if Like.find_by(user_id: current_user.id,post_id: @post)
-  = link_to "いいね！済み",post_like_path(post.id), method: :post 
+- if Like.find_by(user_id: current_user.id,post_id: @posts)
+  = link_to "いいね！済み",post_like_path(@posts.id), method: :delete,class:"iine-btn" 
 - else
-  = link_to 'いいね' post_likes_path(post.id),method: :post,
+  = link_to "いいね", post_path(@posts.ids),method: :post,class:"iine-btn"

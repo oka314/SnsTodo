@@ -30,11 +30,13 @@
     }
   }
 }
-
+@import "font-awesome-sprockets";
+@import "font-awesome";
 @import "top";
 @import "posts/header";
 @import "posts/index";
 @import "users/show";
 @import "posts/new";
 @import "posts/side";
+@import "likes/like";
 @import "flash";
