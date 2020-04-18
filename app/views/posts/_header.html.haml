@@ -4,7 +4,9 @@
       = link_to root_path do
         = image_tag src="/images/logo.png", width:"140px", class:"shop-icon"
     .header-left__search
-      = form_with(url: searches_path,local: true,method: :get,class:"header-left__search--box")
+      = form_with(url: searches_path,local: true,method: :get) do |f|
+        = f.text_field :keyword,placeholder: "ユーザの検索",class:"header-left__search--box"
+        = f.submit "検索",class: "header-left__search--btn"
       -# %input.header-left__search--box
       -# %button.header-left__search--btn
       -#   検索

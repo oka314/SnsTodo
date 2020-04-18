@@ -16,13 +16,14 @@
       padding-left: 90px;
       &--box{
         margin-left: 50px;
-        vertical-align : middle;
         width: 80%;
+        border: 1px solid black;
       }
       &--btn{
         height: 27px;
         width: 60px;
         font-weight: bold;
+        vertical-align : middle;
       }
     }
   }
