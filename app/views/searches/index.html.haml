@@ -3,22 +3,16 @@
   = render "posts/side"
   .main__right
     - if @search.present?
-      .content-box
-        =@search
-        .title
-          の検索結果
+      .search-box
+        .search-box__title
+          = "#{@search}の検索結果"
       .search-number
-        = "#{posts.count}件表示"
+        = "#{@users.count}件表示"
     - else
       .title
         検索結果はありません。
-    - @posts.each do |post|
-      .content-box__posts
+    - @users.each do |user|
+      = link_to user_path(user.id),class:"posts-link" do
         .posts-data
           .user-name
-            =post.name
-          .date
-            =post.created_at.to_s(:datetime_jp)
-          -# = render "likes/like"
-        .posts-content
-          =post.explain
+            =user.name
