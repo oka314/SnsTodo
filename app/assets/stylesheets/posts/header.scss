@@ -17,7 +17,13 @@
       &--box{
         margin-left: 50px;
         width: 80%;
-        border: 1px solid black;
+        border: 2px solid black;
+        border-radius: 5px 0 0 5px;
+        padding: 5px;
+        outline: none;
+      }
+      &--box:focus{
+        color: gray;
       }
       &--btn{
         height: 27px;

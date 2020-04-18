@@ -6,7 +6,8 @@
     .header-left__search
       = form_with(url: searches_path,local: true,method: :get) do |f|
         = f.text_field :keyword,placeholder: "ユーザの検索",class:"header-left__search--box"
-        = f.submit "検索",class: "header-left__search--btn"
+        = f.submit "検索",class: "header-left__search--btn" do 
+          = icon 
       -# %input.header-left__search--box
       -# %button.header-left__search--btn
       -#   検索
