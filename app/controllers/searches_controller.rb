@@ -1,6 +1,7 @@
 class SearchesController < ApplicationController
-  def self.search
-    @posts = Post.search(params[:keyword])
-    @serch =params[:keyword]
+  def index
+    @posts = Post.search(params[:keyword]).order(created_at: :desc)
+    binding.pry
+    @search =params[:keyword]
   end
 end
