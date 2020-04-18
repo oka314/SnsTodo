@@ -30,22 +30,7 @@
       %br
       でも大丈夫！そんな時はMeToを使って！
       %br
-      思い切って公開してしちゃいましょう！
-      %br
-      あなたのToDoにイイネ！がついたら
-      %br
-      あなたにフォロワーがついたら
-      %br
-      きっと貴方は自信を持って行動できるでしょう！
-      %br
-      もし、尊敬できる人を見つけたら
-      %br
-      勇気を持ってフォローしてコメントしよう！
-      %br
-      もしかしたら仲良くなれちゃうかも！
-      %br
-      頑張る貴方は美しい！理想の自分を目指そう！
- 
+      思い切って公開してしちゃいましょう！ 
   %label{:for => "label3"} 製作者挨拶
   %input#label3.explain{:type => "checkbox"}/
   .explain-box
@@ -63,18 +48,3 @@
       もちろん私も使います！私のToDoを見られるのは恥ずかしいですね。
       %br
       では、MeToで
-  
-
-
-
-
-
--# .nav
--#   - if user_signed_in?
--#     .right-list
--#       = link_to "マイページ", user_path, class: "right-list__mine"
--#       = link_to "ログアウト", destroy_user_session_path, method: :delete
--#   - else
--#     .right-list
--#       = link_to "ログイン", user_session_path
--#       = link_to "新規会員登録", new_user_registration_path , class: "right-list__new"
