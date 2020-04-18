@@ -1,15 +1,20 @@
 class LikesController < ApplicationController
   def create
-    @like = Like.new(user_id: @current_user.id, post_id: params[:post_id])
-    @like.save
-    @post = Post.find_by(id: @like.post_id)
-    @like_count = Like.where(post_id params[:post_id]).count
-  end
-  
-  def delete
-    @like = Like.find_by(user_id: @current_user.id, post_id params[:post_id])
-    @post = Post.find_by(id: @like.post_id)
+    @like = current_user.likes.create(like_params)
+    if @like.save
+      redirect_to posts_path,notice:'いいねしました！'
+    else
+      redirect_to posts_path,notice:'いいね出来ませんでした！'
+    end
+
+  def destroy
+    @like = Like.find_by(like_params, user_id: current_user.id)
     @like.destroy
-    @like_count = Like.where(post_id params[:post_id]).count
+    redirect_to posts_path,notice:'いいねを外しました'
   end
+
+  private
+  def like_params
+    params.permit(:post_id)
+  end  
 end
