@@ -4,9 +4,19 @@
       = link_to root_path do
         = image_tag src="/images/logo.png", width:"140px", class:"shop-icon"
     .header-left__search
-      %input.header-left__search--box
-      %button.header-left__search--btn
-        検索
+      = form_with(url: searches_path,local: true,method: :get,class:"header-left__search--box")
+      -# %input.header-left__search--box
+      -# %button.header-left__search--btn
+      -#   検索
+  -#     .header
+  -# .main
+  -#   = link_to root_path do
+  -#     = image_tag src="/images/material/logo/logo.png", width:"140px", class:"header_icon"
+  -#   .main-searchBox
+  -#     = form_with(url: searches_path,local: true,method: :get,class:"search-form") do |f|
+  -#       = f.text_field :keyword,placeholder:"何かお探しですか？",class:"search-input"
+  -#       = f.submit '検索',class: " search-btn"
+
   .header-right
     .header-right__my-page
       = link_to "#{current_user.name}さんのマイページ","/users/#{current_user.id}",class:"usermypage"
