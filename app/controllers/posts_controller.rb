@@ -6,7 +6,7 @@ class PostsController < ApplicationController
 
   def new
     @post = Post.new
-   
+    @like =Like.new
   end
 
   def show
