@@ -5,7 +5,6 @@ Rails.application.routes.draw do
   root 'top#index'
   resources :posts, only:[:index,:new,:create,:show,:destroy] 
   resources :users, only: [:show]
-  post   '/like/:product_id' => 'likes#like',   as: 'like'
-  delete '/like/:product_id' => 'likes#unlike', as: 'unlike'
-
+  post "likes/:post_id/create" => "likes#create"
+¥  post "likes/:post_id/destroy" => "likes#destroy"
 end

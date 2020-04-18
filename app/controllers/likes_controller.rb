@@ -1,20 +1,21 @@
 class LikesController < ApplicationController
-  before_action :set_variables
+  before_action :authenticate_user
 
-  def like
-    like = current_user.likes.new(post_id: @post.id)
-    like.save
+  def create
+    @like = Like.new(user_id: @current_user.id, post_id: params[:post_id])
+    if @like.save
+      redirect_to posts_path,notice:'いいねしました！'
+    else
+      redirect_to posts_path,notice:'いいね出来ませんでした！'
   end
-
-  def unlike
-    like = current_user.likes.find_by(post_id: @post.id)
-    like.destroy
-  end
-
-  private
-
-  def set_variables
-    @post = Post.find(params[:post_id])
-    @id_name = "#like-link-#{@post.id}"
+  
+  # destroyアクションを定義してください
+ def destroy            
+    @like = Like.find_by(user_id: @current_user.id, post_id: params[:post_id])            
+    if @like.destroy
+      redirect_to posts_path,notice:'いいねを外しました'
+    else
+      redirect_to posts_path,notice:'いいねを外せませんでした'      
+ end
   end
 end
