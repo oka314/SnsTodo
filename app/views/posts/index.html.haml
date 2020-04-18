@@ -11,6 +11,7 @@
                 =post.user.name
               .date
                 =post.created_at.to_s(:datetime_jp)
+              =render "likes/like"
             .posts-content
               =post.explain
     
