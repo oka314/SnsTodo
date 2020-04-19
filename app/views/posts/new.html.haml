@@ -6,7 +6,9 @@
       ToDo投稿
     .posts-boxs
       = form_with model: @post,local: true do|f|
-        = f.text_area :explain,class:"posts-box",placeholder: "(例)\n  電車通勤中に座れたら読書1時間、座れなかったらAudible1時間もしくは動画学習1時間、駅まで早歩きをする\n   など\n\n『コツ』\n     新しい習慣を身に付けるためには、今の習慣にプラスできるものからやってみましょう。\n     まずは自分に自信をつけることからはじめましょう。"
+        = f.text_area :explain,class:"posts-box",placeholder: "(例)\n  電車通勤中に座れたら読書1時間、座れなかったらAudible1時間もしくは動画学習1時間、駅まで早歩きをする\n   など\n\n『コツ』\n     新しい習慣を身に付けるためには、今の習慣にプラスできるものからやってみましょう。\n     まずは自分に自信をつけることからはじめましょう。" 
+        .count-box
+          = "/300"
         = f.submit "投稿する",class:"write-box"
        
 

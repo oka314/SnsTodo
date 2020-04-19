@@ -7,12 +7,16 @@
   .posts-box{
     height: 250px;
     width: 100%;
-    margin-bottom:70px ;
+    // margin-bottom:70px ;
     background-color: white;
     font-size: 15px;
     resize: none;
     padding: 30px;
     border:  2px solid black;
+    outline: none;
+  }
+  .count-box{
+    float: right;
   }
     input:focus{
       outline: none;
