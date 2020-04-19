@@ -1,5 +1,4 @@
 .search-box,.search-number{
-  
   text-align: center;
   &__title{
     font-size: 40px;
@@ -9,19 +8,15 @@
 .search-number{
   font-size: 20px;
 }
-.posts-link{
-  text-decoration: none;
-  font-size: 20px;
+.user-lists{
+  display: block;
+  width: 20%;
+  text-align: center;
+ .user-link{
+   text-decoration: none;
+ }
+ .user-name{
   color: black;
-  width: 30%;
-  .posts-data{
-    display: flex;
-    margin-bottom:10px ;
-    width: 30%;
-    border: 1px solid black;
-    .user-name{
-      display: block;
-      margin: 0 auto;
-    }
-  }
+  font-size: 20px;
+ }
 }

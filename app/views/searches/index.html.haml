@@ -10,9 +10,10 @@
         = "#{@users.count}件表示"
     - else
       .title
-        検索結果はありません。
-    - @users.each do |user|
-      = link_to user_path(user.id),class:"posts-link" do
-        .posts-data
-          .user-name
-            =user.name
+        = "#{@search}の検索結果"
+    - @users.each_slice(2) do |user|
+      - user.each do |u|
+        .user-lists
+          = link_to user_path(u),class:"user-link" do
+            .user-name
+              =u.name
