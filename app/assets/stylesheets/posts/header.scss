@@ -16,13 +16,23 @@
       padding-left: 90px;
       &--box{
         margin-left: 50px;
-        vertical-align : middle;
         width: 80%;
+        color: black;
+        border: 2px solid black;
+        border-radius: 100px;
+        padding: 5px;
+        outline: none;
+      }
+      &--box:focus{
+        color: black;
       }
       &--btn{
-        height: 27px;
+        height: 38px;
         width: 60px;
         font-weight: bold;
+        border-radius:100px ;
+        border: 1px solid black;
+        outline: none;
       }
     }
   }
@@ -41,9 +51,6 @@
     }
     &__log-out{
       margin-left: 30px;
-    }
-    &__ranking{
-      margin-left: 20px;
     }
   }
 }

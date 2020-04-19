@@ -5,4 +5,5 @@
     .menubar
       = link_to "投稿する",new_post_path,class:"menubar-btn"
       = link_to "みんなの投稿に戻る",posts_path,class:"menubar-btn"
+      = link_to "会員情報の変更",edit_user_registration_path,class:"menubar-btn"
       = link_to "ログアウト", destroy_user_session_path, method: :delete,class:"menubar-btn"

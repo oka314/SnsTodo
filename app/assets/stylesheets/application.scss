@@ -32,6 +32,7 @@
 }
 @import "font-awesome-sprockets";
 @import "font-awesome";
+@import "flash";
 @import "top";
 @import "devise/shared/links";
 @import "devise/sessions/new";
@@ -42,4 +43,4 @@
 @import "posts/new";
 @import "posts/side";
 @import "likes/like";
-@import "flash";
+@import "searches/index";
