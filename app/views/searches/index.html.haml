@@ -11,9 +11,12 @@
     - else
       .title
         = "#{@search}の検索結果"
-    - @users.each_slice(5) do |user|
+    - @users.each_slice(1) do |user|
       .user-lists
         - user.each do |u|
           = link_to user_path(u),class:"user-link" do
             .user-name
               =u.name
+      .page
+        = paginate @users
+ 
