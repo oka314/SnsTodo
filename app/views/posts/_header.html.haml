@@ -10,5 +10,3 @@
   .header-right
     .header-right__my-page
       = link_to "#{current_user.name}さんのマイページ","/users/#{current_user.id}",class:"usermypage"
-    .header-right__log-out
-      = link_to "ログアウト", destroy_user_session_path, method: :delete,class:"usermypage"

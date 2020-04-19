@@ -3,11 +3,10 @@
   border: 3px solid black;
   margin: 0 auto;
   padding: 80px 30px;
-  height: 700px;
+  height: 500px;
   .posts-box{
     height: 250px;
     width: 100%;
-    // margin-bottom:70px ;
     background-color: white;
     font-size: 15px;
     resize: none;
@@ -24,14 +23,15 @@
     .write-box{
       display: block;
       margin: 0 auto;
-      height: 100px;
+      height: 50px;
       width: 30%;
       text-align: center;
       background-color: white;
       border: 2px solid black;
       border-radius: 50px;
-      font-size: 40px;
+      font-size: 24px;
       font-weight: 900;
+      margin-top: 20px;
     }
     .write-box:active{
       -webkit-transform: translateY(4px);
