@@ -3,16 +3,20 @@
     .user-main__box--title アカウント編集
     = form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f|
       = render "devise/shared/error_messages", resource: resource
-      .field
-        = f.label :email
+      .email
+        = f.label :メールアドレス,class:"field"
         %br/
         = f.email_field :email, autofocus: true, autocomplete: "email"
       - if devise_mapping.confirmable? && resource.pending_reconfirmation?
         %div
           Currently waiting confirmation for: #{resource.unconfirmed_email}
-      .field
-        = f.label :password
-        %i (leave blank if you don't want to change it)
+      .nickname
+        = f.label :ニックネーム,class:"field"
+        %br/
+        = f.text_field :name, autofocus: true, autocomplete: "name"
+
+      .password
+        = f.label :変更したいパスワード,class:"field"
         %br/
         = f.password_field :password, autocomplete: "new-password"
         - if @minimum_password_length
@@ -20,19 +24,15 @@
           %em
             = @minimum_password_length
             characters minimum
-      .field
-        = f.label :password_confirmation
+      .password
+        = f.label :パスワード確認,class:"field"
         %br/
         = f.password_field :password_confirmation, autocomplete: "new-password"
-      .field
-        = f.label :current_password
-        %i (we need your current password to confirm your changes)
+      .passord
+        = f.label :現在のパスワード,class:"field"
         %br/
         = f.password_field :current_password, autocomplete: "current-password"
       .actions
-        = f.submit "Update"
-    %h3 Cancel my account
-    %p
-      Unhappy? #{button_to "Cancel my account", registration_path(resource_name), data: { confirm: "Are you sure?" }, method: :delete}
-    = link_to "Back", :back
+        = f.submit "変更",class:"field-btn"
+    = link_to "戻る" ,root_path,class:"back-btn"
     
